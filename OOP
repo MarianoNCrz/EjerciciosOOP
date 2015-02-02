@@ -1,0 +1,127 @@
+import java.applet.*;
+import java.awt.Graphics;
+
+public class HolaMundoWeb extends Applet {
+		public void paint(Graphics g){
+			g.drawString("Hola Mundo!", 20, 20);
+		}
+
+}
+
+
+------------------------------------------------------
+
+public class NumerosImpares {
+		public static long numim(int x){
+		if(x>=0)
+			return (x+(x+1));
+			return (1);
+		}
+			public static void main(String[] args) {
+				int k;
+				for(k=0;k<10;k++)
+				System.out.println("Los numeros impares menores que 20 son: "+numim(k));
+			}
+}
+
+--------------------------------------------------------------------
+
+
+public class Fibonacci {
+	public static long fib(int n) { 
+		if (n <= 1) return n; 
+		else return fib(n-1) + fib(n-2); 
+		} 
+
+		public static void main(String[] args) { 
+		int k; 
+		for (k=0;k<=20;k++) 
+		System.out.println(k + ": " + fib(k)); 
+		} 
+
+}
+
+
+
+
+---------------------------------------------------
+
+//	Imprime Factoriales
+//
+public class Factoriales {
+			static long factorial(int v){
+				if (v>1)	
+					return(v*factorial(v-1));
+				return(1);
+			}
+	public static void main(String[] args) {
+			int k;
+			for(k=1;k<=10;k++)
+				System.out.println(factorial(k));
+		
+	}
+
+}
+
+
+-------------------------------------------
+
+public class House {
+	public String Roof;
+	public String Door;
+	public String Windows;
+	public String Floor;
+	public String Walls;
+public String getRoof() {
+		return Roof;
+	}
+	public String getDoor() {
+		return Door;
+	}
+	public String getWindows() {
+		return Windows;
+	}
+	public String getFloor() {
+		return Floor;
+	}
+	public String getWalls() {
+		return Walls;
+	}
+	public void setRoof(String roof) {
+		Roof = roof;
+	}
+	public void setDoor(String door) {
+		Door = door;
+	}
+	public void setWindows(String windows) {
+		Windows = windows;
+	}
+	public void setFloor(String floor) {
+		Floor = floor;
+	}
+	public void setWalls(String walls) {
+		Walls = walls;
+	}
+
+}
+
+DENTRO DE ESTE MISMO EJ: OTRA CLASE:
+
+public class TestHouse {
+
+	public TestHouse() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		House H = new House();
+		H.setDoor("door");
+		H.setFloor("floor");
+		H.setRoof("roof");
+		H.setWalls("walls");
+		H.setWindows("windows");
+		System.out.println("The house is made with "+H.getWalls()+", "+H.getRoof()+", "+H.getDoor()+", "+H.getFloor()+" and "+H.getWindows());
+	}
+
+}
